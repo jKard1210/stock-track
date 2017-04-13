@@ -1,0 +1,105 @@
+.green-line{
+    border-top:2.5px gray;
+    margin-bottom:5px;
+}
+.flex-container{
+    display:flex;
+}
+
+
+.flex-container div.main{
+    order:2;
+    flex-basis:90%;
+    background-color:gray;
+    padding:1em;
+    box-sizing: border-box;
+}
+
+.flex-container div.left-side{
+    order:1;
+    flex-basis: 5%;
+}
+
+.flex-container div.right-side{
+    order:3;
+    flex-basis: 5%;
+}
+
+.input-box>form{
+    display:flex;
+    justify-content: center;
+}
+
+.input-box>form>input{
+    flex-basis: 60%;
+}
+
+.input-box>form>button{
+    flex-basis: 15%;
+}
+
+.box-container{
+  box-sizing:border-box;
+  padding:10px 0;
+  margin-top:25px;
+}
+
+.stock-box{
+  background-color:white;
+  flex-basis:30.3%;
+  margin:10px 1.5%;
+  padding:5px;
+  box-sizing:border-box;
+  box-shadow:0 10px 10px 0 rgba(0,0,0,0.16),0 10px 10px 0 rgba(0,0,0,0.12)!important
+  
+}
+
+.stock-box .box-header{
+  display:flex;
+}
+.stock-box .box-header>h1{
+  margin:0 0 0 10px;
+  flex:1;
+}
+.stock-box .box-header>img{
+    display:float;
+    float:right;
+    width:10%;
+    height:10%;
+}
+
+.price {
+    margin-right: 20px;
+    margin-top: 30px;
+    color: green;
+}
+
+
+
+@media (min-width:1208px){
+   .box-container{
+  display:flex;
+  flex-wrap:wrap;
+ }
+}
+
+
+.form-control{
+    display: block;
+    width: 100%;
+    padding: .5rem .75rem;
+    font-size: 1rem;
+    line-height: 1.25;
+    color: #464a4c;
+    background-color: #fff;
+    background-image: none;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: .25rem;
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+}

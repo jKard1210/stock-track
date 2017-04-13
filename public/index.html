@@ -1,0 +1,49 @@
+<html>
+
+<head>
+   <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stock Market Tracker</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
+  <link rel="stylesheet" href="./public/my.css">
+</head>
+
+<body>
+  <div class="green-line"></div>
+
+        <div class="chart-box" id="chart-box" style="height: 400px; min-width: 310px"></div>
+
+
+  <div class="flex-container">
+    <div class="left-side"></div>
+    
+    <div class="right-side"></div>
+    
+    
+    <div class="main">
+      <div class="alert-box"></div>
+      <div class="input-box">
+        <form action="">
+          <input id="m" placeholder="FB,MSFT,GOOGL,AAPL,FB,MMM... and so on ,get data over 3000 USA companies." class="form-control" autocomplete="off" /><button>Add</button>
+        </form>
+      </div>
+
+      <div class="box-container">
+
+
+      
+  
+  
+    </div>
+    <div class="left-side"></div>
+    <div class="right-side"></div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.2.0/socket.io.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="https://code.highcharts.com/stock/highstock.js"></script>
+  <script src="https://code.highcharts.com/stock/modules/exporting.js"></script>
+  <script src="./public/stocks.js"></script>
+</body>
+
+</html>
